@@ -87,17 +87,17 @@ namespace APNGLibrary
 			}
 		}
 
-		public short ReadShort()
+		public ushort ReadShort()
 		{
-			short result = 0;
+			ushort result = 0;
 			for (int i = 2; i > 0; i--)
 			{
-				result += (short)(BaseStream.ReadByte() << ((i - 1) * 8));
+				result += (ushort)(BaseStream.ReadByte() << ((i - 1) * 8));
 			}
 			return result;
 		}
 
-		public void WriteShort(short input)
+		public void WriteShort(ushort input)
 		{
 			for (int i = 2; i > 0; i--)
 			{

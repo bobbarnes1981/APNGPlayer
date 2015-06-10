@@ -13,8 +13,8 @@ namespace APNGLibrary
 		public uint Height { get; private set; }
 		public uint XOffset { get; private set; }
 		public uint YOffset { get; private set; }
-		public short DelayNum { get; private set; }
-		public short DelayDen { get; private set; }
+		public ushort DelayNum { get; private set; }
+		public ushort DelayDen { get; private set; }
 		public DisposeOperation DisposeOperation { get; private set; }
 		public BlendOperation BlendOperation { get; private set; }
 
